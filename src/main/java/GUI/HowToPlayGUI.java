@@ -1,3 +1,5 @@
+//This class contains objects variables and functions that is needed
+//for launching the HowToPlayGUI screen
 package GUI;
 
 import Game.HowToPlayScreen;
@@ -8,6 +10,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class HowToPlayGUI implements HowToPlayScreen {
+    //private attributes
     private final JFrame frame = new JFrame("RecycleMania");
     private JPanel main_panel;
     private JButton backButton;
@@ -29,15 +32,17 @@ public class HowToPlayGUI implements HowToPlayScreen {
     private JLabel instructions_11;
     private JLabel blankSix;
 
+    //default constructor
     public HowToPlayGUI(){
-        frame.add(main_panel);
+        frame.add(main_panel); //add the About Us UI components to the JFrame
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setPreferredSize(new Dimension(650, 600));
         frame.pack();
-        frame.setVisible(true);
+        frame.setVisible(true); //show the JFrame on the window
 
-        displayInstructions();
+        displayInstructions(); //displays how to play instructions
 
+        //Function takes the user to the GUI (Main GUI) when the user clicks Back button
         backButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -48,6 +53,7 @@ public class HowToPlayGUI implements HowToPlayScreen {
         });
     }
 
+    //Function to set how to play instructions
     @Override
     public void displayInstructions(){
         instructions_1.setText("Welcome to RecycleMania!");
@@ -69,11 +75,12 @@ public class HowToPlayGUI implements HowToPlayScreen {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setPreferredSize(new Dimension(650, 600));
         frame.pack();
-        frame.setVisible(true);
+        frame.setVisible(true); //show the updated JFrame on the window
     }
 
+    //main
     public static void main(String[] args) {
-        HowToPlayGUI g = new HowToPlayGUI();
+        HowToPlayGUI g = new HowToPlayGUI(); //calls the About Us constructor to show whats in the JFrame
 
     }
 }

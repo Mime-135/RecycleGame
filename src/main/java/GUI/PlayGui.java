@@ -1,3 +1,5 @@
+//This class contains objects variables and functions that is needed
+//for launching the PlayGUI screen
 package GUI;
 import Game.GamePlayScreen;
 import Game.Game_Info;
@@ -15,7 +17,7 @@ import java.nio.file.Paths;
 
 
 public class PlayGui implements GamePlayScreen {
-
+    //private attributes
     private final JFrame frame = new JFrame("RecycleMania");
     private final boolean save_game = false;
     private final boolean play_again = false;
@@ -61,6 +63,7 @@ public class PlayGui implements GamePlayScreen {
     private String minutes_string = String.format("%02d", minutes);
     private String hours_string = String.format("%02d", hours);
 
+    //default constructor that throws an exception for file access
     public PlayGui() throws IOException {
         setting_containers(); //Setting the containers in the Gui
         setting_Radio_buttons();//Setting the radio buttons in the Gui

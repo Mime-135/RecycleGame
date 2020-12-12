@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Recycler:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Recycler_jar</output-path>
+    <root id="archive" name="Recycler.jar">
+      <element id="module-output" name="Recycler" />
+    </root>
+  </artifact>
+</component>
