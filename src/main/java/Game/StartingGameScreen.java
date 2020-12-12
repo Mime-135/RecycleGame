@@ -1,4 +1,3 @@
-/*
 package Game;
 
 import GUI.GUI;
@@ -63,7 +62,7 @@ public class StartingGameScreen {
     public void run()
     {
         //frame.setLayout(null); // frame
-       // panel.setLayout(new GridLayout(3, 5));
+        // panel.setLayout(new GridLayout(3, 5));
         panel.add(Setdifficulty);
         panel.add(r1);bg_Difficulty.add(r1);
         panel.add(r2);bg_Difficulty.add(r2);
@@ -161,7 +160,7 @@ public class StartingGameScreen {
             return "Images";
         }
         else {
-           return "Words";
+            return "Words";
         }
     }
     //getter for item numbers
@@ -191,4 +190,3 @@ public class StartingGameScreen {
 
     }
 }
-*/
